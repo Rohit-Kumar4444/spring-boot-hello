@@ -1,0 +1,8 @@
+[main 6296687] hi this
+ 7 files changed, 126 insertions(+)
+ create mode 100644 depl.yaml
+ create mode 100644 spring.yaml
+ create mode 100644 springser.yaml
+ create mode 100644 suj.yaml
+ create mode 100644 suju.yaml
+ create mode 100644 svc.yaml
