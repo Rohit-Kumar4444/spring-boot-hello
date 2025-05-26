@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+  labels:
+    app: suju
+  name: suj
+  namespace: default
+spec:
+  ports:
+  - nodePort: 31002
+    port: 80
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: suju
+  type: NodePort

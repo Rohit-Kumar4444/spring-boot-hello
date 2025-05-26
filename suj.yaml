@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2025-05-26T06:30:20Z"
+  labels:
+    app: suju
+  name: suj
+  namespace: default
+  resourceVersion: "347486"
+  uid: 7184fa23-7372-4831-919e-47b9388bf8e4
+spec:
+  clusterIP: 10.104.213.16
+  clusterIPs:
+  - 10.104.213.16
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: suju
+  sessionAffinity: None
+  type: NodePort
+status:
+  loadBalancer: {}
